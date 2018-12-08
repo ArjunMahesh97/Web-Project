@@ -1,0 +1,322 @@
+@font-face{
+    font-family: Noe;
+    src:url('../assets/fonts/noe-display-bold.ttf');
+}
+
+* {
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+}
+
+html,body{
+    height:100%;
+    overflow-x: hidden !important;
+}
+
+body{
+    background:url('../assets/background.png') no-repeat;
+    background-size: cover;
+}
+
+.navbar,.navbar-default{
+    padding:35px 60px;
+    border-radius:0;
+    border:0 !important;
+    background-color: transparent !important;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    color:#000629 !important;
+    font-family: Noe;
+    font-size: 2.5em !important;
+}
+
+.navbar-right>li>a{
+    font-family: Rubik;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login-btn{
+    color:#fff !important;
+}
+
+.signup-btn,.signup-btn:hover,.signup-btn:focus{
+    margin-top:5px;
+    background-color:#4c37a8 !important;
+    padding:10px 15px 7px 15px !important;
+    border-radius:4px;
+    color:#fff !important;
+    box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.2);
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color:#000629 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent !important;
+}
+
+.img-hero{
+    width: 100%;
+}
+
+.tagline{
+    margin:15vh auto 10px;
+    font-weight: bold;
+    font-family: Noe;
+    color:#000629dd;
+}
+
+.desc{
+    width: 80%;
+    font-family: Rubik;
+    color:#000629cc;
+    margin-bottom: 20px !important;
+}
+
+.start-btn,.start-btn:hover,.start-btn:focus {
+    text-decoration: none;
+    padding:10px 25px 8px 25px;
+    color:#fff;
+    font-weight: bold;
+    box-shadow: 5px 5px 25px 0 rgba(0,0,0,0.2);
+    font-size: 21px;
+    font-family: Noe;
+    background : -moz-linear-gradient(0% 50% 0deg,rgba(79, 34, 128, 1) 0%,rgba(212, 20, 90, 1) 100%);
+    background : -webkit-linear-gradient(0deg, rgba(79, 34, 128, 1) 0%, rgba(212, 20, 90, 1) 100%);
+    background : -webkit-gradient(linear,0% 50% ,100% 50% ,color-stop(0,rgba(79, 34, 128, 1) ),color-stop(1,rgba(212, 20, 90, 1) ));
+    background : -o-linear-gradient(0deg, rgba(79, 34, 128, 1) 0%, rgba(212, 20, 90, 1) 100%);
+    background : -ms-linear-gradient(0deg, rgba(79, 34, 128, 1) 0%, rgba(212, 20, 90, 1) 100%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4F2280', endColorstr='#D4145A' ,GradientType=0)";
+    background : linear-gradient(90deg, rgba(79, 34, 128, 1) 0%, rgba(212, 20, 90, 1) 100%);
+    border-radius : 35px;
+    -moz-border-radius : 35px;
+    -webkit-border-radius : 35px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4F2280',endColorstr='#D4145A' , GradientType=1);
+}
+
+.thumbnail > img,
+.thumbnail a > img {
+  margin-right: auto;
+  margin-left: auto;
+  height: 200px;
+}
+
+
+/* iphone x */
+@media screen and (device-width:375px) and (device-height:812px){
+    .navbar-brand{
+        margin-top: 20px !important;
+    }
+    .navbar-default .navbar-toggle {
+        margin-top: 28px !important;
+    }
+    .tagline{
+        margin:40px auto 10px !important;
+        font-size: 48px !important;
+    }
+    .desc{
+        font-size: 16px !important;
+        margin-bottom: 20px !important;
+    }
+}
+
+@media screen and (max-width:455px){
+    .start-btn{
+        padding: 6px 20px !important;
+        font-size: 18px !important;
+    }
+    .desc{
+        font-size: 16px !important;
+    }
+    .tagline{
+        font-size: 3em !important
+    }
+}
+
+@media screen and (max-width:768px){
+    .navbar,.navbar-default{
+        padding:5px !important;
+    }
+    body{
+        background:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.7)), url('../assets/sweet-waves.jpg');
+        /* background-position:  top; */
+    }
+    .login-btn{
+        color:#000629cc !important; 
+    }
+    .signup-btn{
+        display: inline-block;
+        width: 100%;
+    }
+    .tagline{
+        margin: 30px auto 10px;
+        font-size: 4em;
+    }
+    .about{
+        margin-bottom: 15px;
+    }
+    .desc{
+        width: 100%;
+        font-size: 21px;
+    }
+    .start-btn{
+        padding:10px 20px;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width:800px){
+    body{
+        background:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.7)), url('../assets/sweet-waves.jpg') !important; 
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1199px){
+    
+    .img-hero{
+        width: 60%;
+        display: block;
+        margin:0 auto;
+    }
+    .tagline{
+        margin-top:4vh;
+        font-size: 4em;
+    }
+    .start-btn,.start-btn:hover,.start-btn:focus{
+        padding:10px 25px;
+    }
+    .desc{
+        font-size: 18px;
+        width: 100% !important
+    }
+    .navbar,.navbar-default{
+        padding:15px !important;
+    }
+    .login-btn{
+        color:#000629 !important;
+    }
+}
+
+@media screen and (device-width:1024px) and (device-height:1366px){
+    body{
+        background-position: 60%;
+    }
+}
+
+@media screen and (min-width:1440px){
+    body{
+        background: url('../assets/backgroundmac.png');
+        background-position:60%; 
+    }
+    .navbar-brand{
+        font-size: 48px !important;
+    }
+    .navbar-right>li>a{
+        font-size: 21px;
+    }
+    .signup-btn,.signup-btn:hover,.signup-btn:focus{
+        padding: 10px 15px !important;
+        border-radius: 6px;
+    }
+    .tagline{
+        margin: 21vh auto 10px; 
+        font-size: 4em;
+    }
+    .desc{
+        font-size: 18px;
+        width: 95%;
+    }
+    .start-btn,.start-btn:hover,.start-btn:focus{
+        padding: 10px 30px;
+        font-size: 21px;
+    }
+    .img-hero{
+        margin-top:10vh;
+    }
+}
+
+@media screen and (min-width:1920px){
+    body{
+        background: url('../assets/backgroundmac.png');
+        background-position:60%; 
+    }
+    .container{
+        width: 80% !important;
+    }
+    .navbar,.navbar-default{
+        padding:80px 0 !important;
+    }
+    .navbar-brand{
+        font-size: 54px !important;
+    }
+    .navbar-right>li>a{
+        font-size: 21px;
+    }
+    .tagline{
+        font-size: 5em;
+        margin-top:15vh;
+    }
+    .start-btn,.start-btn:hover,.start-btn:focus{
+        padding: 15px 40px;
+        font-size: 24px;
+    }
+    .desc{
+        font-size: 21px;
+        margin-bottom: 35px !important;
+    }
+    .img-hero{
+        margin-top:5vh;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:2560px){
+    body{
+        background: url('../assets/backgroundmac.png');
+        background-position:60%; 
+    }
+    .container{
+        width: 80% !important;
+    }
+    .navbar,.navbar-default{
+        padding:80px 0 !important;
+    }
+    .navbar-brand{
+        font-size: 72px !important;
+    }
+    .navbar-right>li>a{
+        font-size: 32px;
+    }
+    .signup-btn,.signup-btn:hover,.signup-btn:focus{
+        margin-top:-10px;
+        padding: 25px  !important;
+    }
+    .tagline{
+        font-size: 8em;
+    }
+    .desc{
+        font-size: 28px !important;
+    }
+    .start-btn,.start-btn:hover,.start-btn:focus{
+        padding: 20px 50px;
+        font-size: 32px !important;
+        border-radius: 35px;
+    }
+    .desc{
+        font-size: 21px;
+        margin-bottom: 35px !important;
+    }
+    .img-hero{
+        margin-top:8vh;
+    }
+}
+
